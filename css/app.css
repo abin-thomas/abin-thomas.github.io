@@ -17,16 +17,16 @@ body {
 .card {
   background: white;
   border-radius: 1rem;
-  padding: 1.5rem;
+  padding: .5rem;
   box-shadow: 3px 3px 12px 2px rgba(0, 0, 0, 0.6);
   transition: 0.2s;
-  margin: 1.5rem;
-  max-height: 25rem;
+  margin: 1rem;
+  max-height: 15rem;
 }
 
 .card-img-top {
   width: 100%;
-  height: 25vh;
+  max-height: 13rem;
   object-fit: contain;
   }
 .card:not(:first-child) {
@@ -48,12 +48,8 @@ body {
   .img-grayScale:hover{
     filter: grayscale(0%);
   }
-@media (min-width: 992px) {
-  body {
-    padding-top: 0;
-    padding-left: 17rem;
-  }
-}
+
+
 #topBtn {
   position: fixed;
 	bottom: 25px;
@@ -199,21 +195,7 @@ section.resume-section .resume-item .resume-date {
   min-width: none;
 }
 
-@media (min-width: 768px) {
-  section.resume-section {
-    min-height: 100vh;
-  }
-  section.resume-section .resume-item .resume-date {
-    min-width: 18rem;
-  }
-}
 
-@media (min-width: 992px) {
-  section.resume-section {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
-  }
-}
 
 .bg-primary {
   background: linear-gradient(to bottom, #00416a, #e4e5e6) !important;
@@ -235,3 +217,28 @@ a {
 a:hover, a:focus, a:active {
   color: #824027;
 }
+
+
+@media (min-width: 768px) {
+  section.resume-section {
+    min-height: 100vh;
+  }
+  section.resume-section .resume-item .resume-date {
+    min-width: 18rem;
+  }
+
+  
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 0;
+    padding-left: 17rem;
+  }
+
+  section.resume-section {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+}
+
