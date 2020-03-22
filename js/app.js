@@ -26,3 +26,13 @@
   });
 
 })(jQuery); // End of use strict
+
+window.addEventListener("scroll",function(){
+  var target = document.getElementById('topBtn');
+  if(window.pageYOffset > 1100){
+   target.style.display = "block"; 
+  }
+  else if(window.pageYOffset < 1100){
+    target.style.display = "none";
+  }
+},false);

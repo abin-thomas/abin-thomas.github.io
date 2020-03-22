@@ -33,22 +33,14 @@ body {
   margin-left: -2rem;
 }
 
-.card:not(:last-child):hover,
+.card:hover,
 .card:not(:last-child):focus-within {
   transform: translateY(-1rem);
 }
-.card:not(:last-child):hover ~ .card,
+.card:hover ~ .card,
 .card:not(:last-child):focus-within ~ .card {
   transform: translateX(2rem);
 }
-
-.img-grayScale{
-  filter: grayscale(100%);
-}
-  .img-grayScale:hover{
-    filter: grayscale(0%);
-  }
-
 
 #topBtn {
   position: fixed;
@@ -63,9 +55,14 @@ body {
 	text-align: center;
 	cursor: pointer;
   border-radius: 50%;
-  
+  display: none;  
 }
-  #topBtn:hover{
+.customShaped{
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+#topBtn:hover{
     border: 2px solid #000;
   }
 
@@ -95,7 +92,7 @@ h3 {
 }
 
 p.lead {
-  font-size: 1.15rem;
+  font-size: 1.5rem;
   font-weight: 400;
 }
 
@@ -110,7 +107,7 @@ p.lead {
   display: inline-block;
   height: 2.5rem;
   width: 2.5rem;
-  background-color: #659DBD;
+  background-color: #00416a;
   color: #fff !important;
   border-radius: 100%;
   text-align: center;
@@ -164,7 +161,6 @@ p.lead {
   #sideNav .navbar-brand .img-profile {
     max-width: 10rem;
     max-height: 10rem;
-    border: 0.5rem solid rgba(255, 255, 255, 0.2);
   }
   #sideNav .navbar-collapse {
     display: flex;
@@ -206,7 +202,8 @@ section.resume-section .resume-item .resume-date {
 }
 
 .text-gradient{
-  background: linear-gradient(to right, #606c88 0%, #3f4c6b 50%);
+  background: linear-gradient(to right, #36D1DC 0%, #3c1053 50%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
