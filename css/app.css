@@ -58,11 +58,12 @@ body {
   border-radius: 50%;
   display: none;  
 }
+/*
 .customShaped{
   -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
-
+*/
 .h5Carousel{
   color: #fff;  
 }

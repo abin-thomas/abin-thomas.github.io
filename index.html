@@ -44,7 +44,16 @@
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
       <span class="d-block d-lg-none">Abin Thomas</span>
       <span class="d-none d-lg-block">
-        <img class="img-fluid img-profile customShaped mx-auto mb-2" src="./Assets/Images/profile/profile.jpg" alt="Abin Thomas Profile">
+        <!--<img class="img-fluid img-profile customShaped mx-auto mb-2" src="./Assets/Images/profile/profile.jpg" alt="Abin Thomas Profile">-->
+        <svg width="200" height="200">
+          <defs>
+              <clipPath id="polygonView">
+                <polygon points="100 0, 200 50, 200 150, 100 200, 0 150, 0 50" />            
+              </clipPath>
+          </defs>
+      <image width="200" height="200" xlink:href="./Assets/Images/profile/profile.jpg" clip-path="url(#polygonView)" />
+          
+       </svg>     
       </span>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -325,7 +334,10 @@
              that are occuring with the car which he can writeoff as expenses during the tax filing. The video below is to demonstrate
              the primary working on the app. 
           </p>
-          <iframe style="width:100%; height:500px;overflow:auto;" src="https://www.youtube.com/embed/XLAUtC_P6HQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe style="width:100%; height:500px;overflow:auto;"
+           src="https://www.youtube.com/embed/XLAUtC_P6HQ" 
+           frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+           allowfullscreen></iframe>
         </div>
 
     </section>
